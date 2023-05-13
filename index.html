@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 간단한 시작단어 게임</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>한글 시작단어 게임</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        #userName,
+        #userInput,
+        #submitWord {
+            margin-top: 10px;
+        }
+
+        #startGame,
+        #submitWord {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        #startGame:hover,
+        #submitWord:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            color: #666;
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>한글 시작단어 게임</h1>
+    <input type="text" id="userName" placeholder="이름을 입력하세요.">
+    <button id="startGame">게임 시작!</button>
+    <div id="gameArea" style="display: none;">
+        <p id="givenInitials">시작단어: </p>
+        <p id="timer">남은 시간: 60초</p>
+        <p id="score">점수: 0</p>
+        <input type="text" id="userInput" placeholder="시작단어로 시작하는 단어를 입력하세요.">
+        <button id="submitWord">제출</button>
+    </div>
+    <div id="resultsArea" style="display: none;">
+        <h2>결과표</h2>
+        <ul id="leaderboard">
+        </ul>
+        <h2>입력 단어 목록</h2>
+        <ul id="wordList">
+        </ul>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
